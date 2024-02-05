@@ -68,8 +68,6 @@ The Sales Management App is a comprehensive mobile application designed to strea
 
 ## Screenshots
 
-Include screenshots or GIFs of your app to showcase its user interface and functionality.
-
 ![Screenshot](screenshot.png)
 
 
