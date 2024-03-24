@@ -11,7 +11,7 @@ import {
     Pressable
 } from 'react-native';
 
-function AddProduct() {
+function EditProduct() {
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -67,4 +67,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     }
 });
-export default AddProduct;
+export default EditProduct;

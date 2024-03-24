@@ -10,17 +10,27 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { Ionicons } from '@expo/vector-icons'; // import Ionicons from react-native-vector-icons
 import 'react-native-gesture-handler';
 import ProductDetails from './screens/subScreens/ProductDetails';
+import EditProduct from './screens/subScreens/EditProduct';
+import AddProduct from './screens/subScreens/AddProduct';
+import Inventory from './screens/InventoryScreen';
+import Sales from './screens/SalesScreen';
+import POS from './screens/PosScreen';
 
 const Tab = createMaterialBottomTabNavigator();
 const HomeStack = createStackNavigator();
 const SettingsStack = createStackNavigator();
+
 
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen name="Back" component={MainScreen} options={{headerShown: false}} />
       <HomeStack.Screen name="Products" component={Products} />
-      <HomeStack.Screen name="Product Details" component={ProductDetails}  />
+      <HomeStack.Screen name="Inventory" component={Inventory}  />
+      <HomeStack.Screen name="Sales" component={Sales} />
+      <HomeStack.Screen name="POS" component={POS} />
+      <HomeStack.Screen name="Edit Product" component={EditProduct}  />
+      <HomeStack.Screen name="Add Product" component={AddProduct} />
     </HomeStack.Navigator>
   );
 }
@@ -30,6 +40,9 @@ function SettingsStackScreen() {
     <SettingsStack.Navigator>
       <SettingsStack.Screen name="Configuration" component={SettingsScreen} />
       <SettingsStack.Screen name="Products_" component={Products} options={{headerShown: false}} />
+      <SettingsStack.Screen name="nventory" component={Inventory}  />
+      <SettingsStack.Screen name="Sales" component={Sales} />
+      <SettingsStack.Screen name="POS" component={POS} />
     </SettingsStack.Navigator>
   );
 }

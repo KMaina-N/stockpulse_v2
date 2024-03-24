@@ -5,8 +5,8 @@ export const FEATURES = [
     new Module(1, "Products", require("../assets/icons/products.png")),
     new Module(2, "Inventory", require("../assets/icons/inventory.png")),
     new Module(3, "Sales", require("../assets/icons/sales.png")),
-    new Module(4, "Discounts", require("../assets/icons/discounts.png")),
-    new Module(5, "Customers", require("../assets/icons/discounts.png")),
+    // new Module(4, "Discounts", require("../assets/icons/discounts.png")),
+    // new Module(5, "Customers", require("../assets/icons/discounts.png")),
     new Module(6, "POS", require("../assets/icons/pos.png")),
     // new Module("Reports", require("../assets/icons/discounts.png")),
 
